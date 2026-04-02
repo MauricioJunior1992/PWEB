@@ -1,0 +1,52 @@
+.container{
+    width: 500px;
+    height: 500px;
+}
+
+@media (max-width: 420px ) {
+.container{
+    background-color: grey;
+}
+.container h2::after{
+    content: "Cinza";
+    color: white;
+}
+}
+
+
+@media (min-width: 421px) and (max-width: 768px) {
+.container
+{
+    background-color: orange;
+}
+.container h2::after{
+    content: "Laranja";
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+.container{
+    background-color: blue;
+}
+.container h2::after{
+    content: "Azul";
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+.container{
+    background-color: purple;
+}
+.container h2::after{
+    content: "Roxo";
+}
+}
+
+@media (min-width: 1921px) {
+.container{
+    background-color: green;
+}
+.container h2::after{
+    content: "Verde";
+}
+}
